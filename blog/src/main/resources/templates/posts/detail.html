@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head th:replace="common/head :: head"></head>
+  <body>
+    <div th:replace="common/header :: nav"></div>
+    <div class="container text-center">
+      <h1 class="my-4" th:text="${post.title}">Post Title</h1>
+      <p th:text="${post.content}">Post content</p>
+      <div>Date Created: <span th:text="${post.createdAt}">Date</span></div>
+      <a href="/posts">一覧に戻る</a>
+    </div>
+  </body>
+</html>
